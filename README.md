@@ -1,4 +1,4 @@
-<img src="https://github.com/matejstastny/pokemon/blob/main/public/icon.png?raw=true" alt="Project icon" width="20%" align="right">
+<img src="https://github.com/matejstastny/pokemon/blob/main/assets/icon.png?raw=true" alt="Project icon" width="20%" align="right">
 
 # Pokemon Game
 
