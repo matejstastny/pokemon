@@ -1,3 +1,5 @@
+<img src="https://github.com/matejstastny/pokemon/blob/main/public/icon.png?raw=true" alt="Project icon" width="20%" align="right">
+
 # Pokemon Game
 
 A terminal text-based Java game where you can create and manage your own Pokemon.
