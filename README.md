@@ -1,75 +1,78 @@
-> [!NOTE]
-> This project represents its final, complete version and will likely not receive further updates as I’ve moved on to larger projects.
+# Pokemon Game
 
-<img src="https://github.com/kireiiiiiiii/pokemon/blob/main/assets/.github/banner.png?raw=true" alt="banner" style="width: 100%;" />
+A terminal text-based Java game where you can create and manage your own Pokemon.
 
-# Pokemon Game 🎮
+## Features
 
-Welcome to the world of Pokemon! This is a terminal text-based Java game where you can create your own Pokemon.
+- Create your own account with password protection (AES encrypted) so no one can access your Pokemon.
+- Choose a starter Pokemon and give it a custom name.
+- Evolve your Pokemon.
+- Save your Pokemon and resume your session next time you launch the game.
+- Unlimited save slots - manage multiple Pokemon per account.
 
-## Features ✨:
+## Pokemon Evolution Lines
 
-- 🔐 Create your own account and set a password so no one can access your Pokemon.
-- 🐾 Create your own Pokemon.
-- 📝 Give it a custom name.
-- 🌟 Evolve it.
-- 💾 Save your Pokemon for the next time you launch the program.
-- 📂 Unlimited save slots.
+| Starter   | Evolutions       | Element  |
+| --------- | ---------------- | -------- |
+| Pichu     | Pikachu → Raichu | Electric |
+| Eevee     | Flareon          | Fire     |
+| Bulbasaur | —                | Seed     |
+| Mew       | Mewtwo           | Normal   |
 
-## Pokemon evolution lines 🔄:
+## Commands
 
-- ⚡ Pichu, Pikachu, Raichu
-- 🔥 Eevee, Flareon
-- 🌿 Bulbasaur
-- 🧬 Mew, Mewtwo (3/9/2024)
+Once inside the game, use these commands:
 
-## Installation 🛠️:
+| Command          | Description                          |
+| ---------------- | ------------------------------------ |
+| `stats`          | Show your Pokemon's stats            |
+| `ability 1`      | Use your Pokemon's first ability     |
+| `ability 2`      | Use your Pokemon's second ability    |
+| `image`          | Display your Pokemon's ASCII art     |
+| `evolve`         | Evolve your Pokemon                  |
+| `save pokemon`   | Save your current Pokemon            |
+| `new pokemon`    | Create a new Pokemon (saves current) |
+| `swich pokemon`  | Switch to another saved Pokemon      |
+| `delete pokemon` | Delete current Pokemon               |
+| `delete account` | Delete your account                  |
+| `exit`           | Exit (with optional save)            |
 
-1. Download the `.jar` package from the [latest release](https://github.com/kireiiiiiiii/pokemon/releases/latest). Choose a `.jar` that corresponds with your Java version.
-2. Run the jar by using this command in the directory where the `.jar` is:
+## Installation
+
+Download the `.jar` package from the [latest release](https://github.com/matejstastny/pokemon/releases/latest) and run it with this command:
 
 ```bash
-java -jar pokemon-your-version.jar
+java -jar pokemon.jar
 ```
 
-## Building from source 🛠️:
+## Building from Source
 
-1. Ensure you have the Java installed. This project can be run using Java 8 and higher.
-2. Clone this repository using the following command:
+Requires Java 8 or higher.
+
+1. Clone the repository:
 
 ```bash
-git clone https://github.com/kireiiiiiiii/pokemon.git ./pokemon
+git clone https://github.com/matejstastny/pokemon.git
+cd pokemon
 ```
 
-3. Run the build script to build the jar file, and then run the jar file:
+2. Build and run:
 
-**MACOS/LINUX:**
+**macOS / Linux:**
 
 ```bash
-cd ./pokemon
 sh build.sh
 java -jar ./build/pokemon.jar
 ```
 
-**WINDOWS:**
+**Windows:**
 
-```cmd
-cd pokemon
+```bat
 call build.bat
 java -jar build\pokemon.jar
 ```
 
-## Credits 🙏:
+## Credits
 
-- This game was can be build using _Java 8_ and higher.
-- This game directly uses characters from the Pokemon franchise.
-- Some assets used in the game are sourced from ASCII art internet sites.
-
-## Known Issues/Bugs 🐛:
-
-- The game output is not intuitive enough for users.
-- The main `App.java` has poor encapsulation and is repetitive.
-
-## Future Development Goals 🚀:
-
-- Development for this game has stopped because I have moved on to bigger projects.
+- Characters from the Pokemon franchise by Nintendo
+- ASCII art sourced from [emojicombos.com](https://emojicombos.com/pokemon-dot-art)
